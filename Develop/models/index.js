@@ -10,8 +10,8 @@ Product.belongsTo(Category, {
 })
 
 // Categories have many Products
-Driver.hasMany(Car, {
-  foreignKey: 'driver_id',
+Category.hasMany(Product, {
+  foreignKey: 'product_id',
 });
 
 // Products belongToMany Tags (through ProductTag)
